@@ -1,0 +1,12 @@
+fun main() {
+	 val myFirstDice = Dice(6)
+     println("Your ${myFirstDice.sides} sided dice rolled ${myFirstDice.roll()}!")
+}
+
+class Dice(val sides: Int) {
+
+    fun roll(): Int {
+        return (1..(1..sides).random()).random()
+    }
+
+}
